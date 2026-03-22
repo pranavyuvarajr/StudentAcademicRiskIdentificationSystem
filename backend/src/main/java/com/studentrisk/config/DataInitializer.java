@@ -29,7 +29,7 @@ public class DataInitializer implements CommandLineRunner {
             // Demo student user — login with roll number as both username & password
             userRepository.save(new User(null, "21CS001", "21CS001", "STUDENT", "Demo Student", null));
 
-            System.out.println("✅ Default users seeded");
+            System.out.println("Default users seeded");
         }
 
         if (studentRepository.count() == 0) {
